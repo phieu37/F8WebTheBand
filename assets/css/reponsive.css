@@ -1,0 +1,110 @@
+/* nên dùng em khi reponsive vì có ông tây đã đi test rất nhiều */
+/* PC 1024px)*/
+@media (min-width: 64em) {}
+
+/* Tablet 740px 1023px*/
+@media (min-width: 46.25em) and (max-width: 63.9375em) {}
+
+/* Tablet & mobie 1023px*/
+/* UX */
+@media (max-width: 63.9375em) {
+    .btn {
+        padding: 15px 16px;
+    }
+
+    #nav .subnav a {
+        padding: 5px 12px;
+    }
+
+    .contact-form .form-control {
+        padding: 15px;
+        font-size: 15px;
+    }
+
+    .contact-info {
+        line-height: 2;
+    }
+
+    /* .contact-submit-btn {
+        font-size: 16px;
+    } */
+
+    #footer .socials-list {
+        font-size: 30px;
+    }
+
+    #footer .socials-list a {
+        margin: 0 8px;
+    }
+
+    #footer .copyright a {
+        padding: 12px 0;
+        display: inline-block;
+    }
+}
+
+/* mobie 739px*/
+@media (max-width: 46.1875em) {
+    .s-full-width,
+    .s-col-full {
+        width: 100% !important;
+    }
+
+    .s-mt-8 {
+        margin-top: 8px !important;
+    }
+
+    /* ẩn header trên mobi */
+    #header {
+        overflow: hidden;
+    }
+
+    /* hiện menu mobile lên */
+    #header .mobile-menu-btn {
+        display: block;
+    }
+
+    /*  ẩn nút tìm kiếm trên mobie */
+    #header .search-btn {
+        display: none;
+    }
+
+    /*  kéo width của menu dài ra */
+    #nav {
+        display: block;
+    }
+
+    /* đưa về menu dọc */
+    #nav > li {
+        display: block;
+    }
+
+    #nav > li a {
+        padding: 1px 24px;
+    }
+
+    /* xử lý width của home ngắn lại*/
+    #nav > li:first-child {
+        display: inline-block;
+    }
+
+    /* initial là giá trị mặc định -> bỏ absolut */
+    #nav .subnav {
+        position: initial;
+        background: #333;
+    }
+
+    /* mobile tối thiểu cao 42-48px mới dễ bấm ngón tay */
+    #nav .subnav a {
+        color: #fff;
+        padding: 5px 41px;
+    }
+
+    #content .member-img {
+        width: 60%;
+    }
+
+    .contact-form {
+        margin-top: 32px;
+    }
+}
